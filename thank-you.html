@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Message Sent ✔ · AYRA</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #0b0f1c 0%, #05070f 45%, #000 100%);
+      font-family: "Poppins", sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .box {
+      padding: 40px 50px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 0 35px rgba(0,0,0,0.5), inset 0 0 10px rgba(255,255,255,0.03);
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #8b5cf6, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      opacity: 0.8;
+      font-size: 0.95rem;
+      line-height: 1.4rem;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #8b5cf6, #d946ef);
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 500;
+      box-shadow: 0 0 20px rgba(139,92,246,0.4);
+      transition: 0.25s ease;
+    }
+
+    a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 30px rgba(217,70,239,0.6);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Message Sent Successfully ✔</h1>
+    <p>Thank you for contacting the AYRA team.<br>We will respond shortly!</p>
+    <a href="index.html">← Go Back to Website</a>
+  </div>
+</body>
+</html>

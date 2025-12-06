@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYRA – Your Personal AI Assistant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="page">
+      <nav class="nav">
+        <a href="#top" class="logo-wrap">
+          <div class="logo-mark"><span>A</span></div>
+          <div>
+            <div class="logo-text-main">AYRA</div>
+            <div class="logo-text-sub">AI Assistant</div>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#use-cases">Use cases</a>
+          <a href="#download">Download</a>
+          <a href="#contact">Contact</a>
+
+          <button class="nav-cta" onclick="scrollToId('download')">
+            Get AYRA
+          </button>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <div class="nav-links-mobile" id="navMobile">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="top">
+    <div class="page">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Always listening · PC + WhatsApp
+          </div>
+
+          <h1 class="hero-title">
+            Meet <span class="hero-gradient">AYRA</span>,  
+            your personal AI Copilot.
+          </h1>
+
+          <p class="hero-subtitle">
+            AYRA helps you automate tasks, reply to WhatsApp, summarize notes, open apps,
+            and more — all with voice or chat.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="scrollToId('download')">
+              Launch AYRA →
+            </button>
+            <button class="btn-secondary" onclick="scrollToId('features')">
+              View Features ↓
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-glow"></div>
+
+          <div class="hero-panel-header">
+            <div class="panel-dots">
+              <div class="panel-dot red"></div>
+              <div class="panel-dot yellow"></div>
+              <div class="panel-dot green"></div>
+            </div>
+            <div class="panel-label">AYRA · Console</div>
+          </div>
+
+          <div class="panel-body" id="consoleOutput"></div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features">
+        <div class="section-header">
+          <div>
+            <div class="section-label">Features</div>
+            <h2 class="section-title">Superpowers packed in one AI.</h2>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <div class="feature-icon">🎧</div>
+            <h3 class="feature-title">Voice Control</h3>
+            <p class="feature-text">Open apps, play music, search web.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3 class="feature-title">WhatsApp Automation</h3>
+            <p class="feature-text">Read & reply chats — hands-free.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3 class="feature-title">AI Assistance</h3>
+            <p class="feature-text">Summaries, coding help, writing & more.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how-it-works">
+        <div class="section-header">
+          <div>
+            <div class="section-label">How it works</div>
+            <h2 class="section-title">Simple 3-step setup.</h2>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            Install & connect
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            Link WhatsApp (optional)
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            Talk normally in Hinglish
+          </div>
+        </div>
+      </section>
+
+      <!-- USE CASES -->
+      <section id="use-cases">
+        <div class="section-header">
+          <div>
+            <div class="section-label">Use cases</div>
+            <h2 class="section-title">Made for daily tasks.</h2>
+          </div>
+        </div>
+
+        <p style="color:var(--muted); font-size:0.9rem;">
+          Study help · Automation · Chat replies · Notes summarizing · Coding assistance
+        </p>
+      </section>
+
+      <!-- DOWNLOAD -->
+      <section id="download">
+        <div class="section-header">
+          <div>
+            <div class="section-label">Download</div>
+            <h2 class="section-title">Try AYRA today</h2>
+          </div>
+        </div>
+
+        <div class="download">
+          <button class="btn-primary"
+            onclick="window.open('https://github.com/', '_blank')">
+            View on GitHub →
+          </button>
+
+          <button class="btn-secondary" onclick="alert('Add EXE link here')">
+            Download Windows (.exe)
+          </button>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="section-header">
+          <div>
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Get in Touch</h2>
+          </div>
+        </div>
+
+        <div class="contact-container">
+
+          <!-- CONTACT INFO LEFT -->
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <div class="info-item">
+              <strong>WhatsApp:</strong>
+              <p>
+                <a
+                  href="https://wa.me/918767378026"
+                  target="_blank"
+                  class="contact-link">
+                  +91 87673 78026
+                </a>
+              </p>
+            </div>
+
+            <div class="info-item">
+              <strong>Email:</strong>
+              <p>
+                <a
+                  href="mailto:ayraassistantai@gmail.com?subject=Contact%20regarding%20AYRA&body=Hi%20AYRA%20Team,"
+                  class="contact-link">
+                  ayraassistantai@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <div class="info-item">
+              <strong>Location:</strong>
+              <p>India (IST)</p>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM RIGHT -->
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xovglrde"
+            method="POST"
+            class="contact-form"
+          >
+            <input type="hidden" name="_redirect" value="thank-you.html">
+
+            <div class="form-status" id="formStatus"></div>
+
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+
+            <div class="field">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+
+            <div class="field">
+              <label>Message</label>
+              <textarea name="message" placeholder="Your Message..." required></textarea>
+            </div>
+
+            <button class="btn-primary" type="submit" id="submitBtn">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> AYRA · Personal AI Assistant Project
+      </footer>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
